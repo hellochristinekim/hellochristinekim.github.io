@@ -1,0 +1,14 @@
+TODO
+- css quality check
+- alt attributes in the pictures
+- performance/memory usage
+
+
+DONE
+- make it so when you click to the next page, the new page starts at the top again
+- make the arrows do a little left/right movement when you hover
+- persistent arrows bug
+- esc to leave modal
+- make the text weight light
+- Make more space on top of the about section
+- create more equal spacing for the text
