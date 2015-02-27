@@ -1,0 +1,190 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    z-index: 1;
+    line-height: 35px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+}
+
+header #header_container{
+    opacity: .8;    
+    width: 1085px;
+    height: 55px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+header #header_container a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header #header_container #about_contact{
+    float:right;
+}
+
+.content{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.content #mygrid{
+    margin: 0 auto;
+}
+
+.content #mygrid .item{
+    cursor: pointer;    
+}
+
+.content #mygrid .item_desc{
+    position: relative; 
+    background-color: white;
+    opacity: 0.9;
+    color: black; 
+    text-align: center; 
+    display: none;
+    font-weight: 300;
+}
+
+.content #mygrid .item_desc p{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 10px auto 10px auto;
+}
+
+.content #mygrid .item_desc .detail{
+    margin: 14px auto 10px auto;
+}
+
+.content #mygrid .item_desc .dash{
+    width: 35px;
+    border-bottom: 4px solid black;
+    margin: 0 auto;
+}
+
+.item img{
+
+    transition: filter 2s ease-in-out;
+    -webkit-transition:-webkit-filter 2s ease-in-out;  
+
+    width: 800px;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+.item:hover > img{
+    transition: filter 2s ease-in-out;
+    -webkit-transition:-webkit-filter 2s ease-in-out;  
+
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);    
+}
+
+#projects, #about{
+    text-align: left;
+    display: none;
+    width: 100%;
+    min-height: 1085px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: white;
+}
+
+#projects .project{
+    display: none;
+    width: 925px;
+    margin: 0 auto;
+}
+
+#projects .project .client{
+    display: inline-block;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+#projects .project .client-name{
+    margin-left: 5px;
+}
+
+#projects .project img{
+    margin: 5px;
+}
+
+#projects .project .description{
+    width: 925px;
+    float: left;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+#projects #control #left, #right{
+    position: fixed;
+    top: 40%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#projects #control #left{
+    left: 30px;
+}
+
+#projects #control #right{
+    right: 30px;
+}
+
+#projects #control #left:hover{
+    left: 20px;
+}
+
+#projects #control #right:hover{
+    right: 20px;
+}
+
+#about.content{
+    width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about.content #about-picture{
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+
+#about.content #about-picture img{
+    max-width:100%;
+    max-height:100%;
+}
+
+#about.content a{
+    color: black;
+    text-decoration: none;
+}
+
+#about.content #email{
+    text-align: center;
+    clear: both;
+    margin-top: 80px;
+}
+
+#about.content #social{
+    margin-top: 30px;
+    text-align: center;
+}
