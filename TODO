@@ -1,10 +1,34 @@
 TODO
+- iphone/ipad version
 - css quality check
 - alt attributes in the pictures
-- performance/memory usage
+- 404 page
+
+TEST: 
+
 
 
 DONE
+- correct linkedin link url
+- about section, right sidebar, left justify the text
+- Left justify text in blue box
+- Hover over text links turn pink
+- Make the top of the purple graphic line up with the top of the blue box
+- about bug
+- can hover link colour have a fade-in transition from black to pink? (0.5 seconds transition)
+- add social media links
+- download my cv? (no)
+- test on firefox
+- Description below talks about the game, provides press links and an option to download the game
+- Get rid of Bitmap page
+- Remove link to bitmap page
+- Remove "Hello, I'm Christine!"
+- Write, "Hello, I'm Christine. Nice to meet you!" on top of the "I can help you" text
+- justify bio
+- add new graphics according to about mockup
+- target _blank in all the links
+- scroll up on keyboard left/right
+- broken images
 - make it so when you click to the next page, the new page starts at the top again
 - make the arrows do a little left/right movement when you hover
 - persistent arrows bug
@@ -12,3 +36,6 @@ DONE
 - make the text weight light
 - Make more space on top of the about section
 - create more equal spacing for the text
+- image reduce quality
+- performance/memory usage
+- fit modal scrolling

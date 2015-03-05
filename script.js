@@ -15,20 +15,6 @@ $(document).ready(function(){
   
   $("#mygrid").gridacord({width: 350, height: 350, item_desc_pct: 0.9});
 
-  $(".item").click(function(){
-    $("#projects").fadeIn(1000);
-    $("#projects .project").eq($(".item").index(this)).addClass("active").fadeIn(1000);
-    $("#control").fadeIn(1000);
-  });
-
-  var cleanScreenFunction = function(){
-    $("#projects").fadeOut(1000);
-    $("#projects .project").removeClass("active");
-    $("#projects .project").fadeOut(1000);
-    $("#about").fadeOut(1000);
-    $("#control").fadeOut(1000);    
-  };
-
   var previousFunction = function(){
 
     var currentProject = $(".project.active");
@@ -41,6 +27,7 @@ $(document).ready(function(){
       $(".project:last").eq(0).addClass("active").fadeIn({duration: 1000});
     }
     
+    $('html, body').animate({scrollTop: 0}, 'slow');
   };
 
   var nextFunction = function(){
@@ -53,16 +40,27 @@ $(document).ready(function(){
     }else{
       $(".project:first").eq(0).addClass("active").fadeIn({duration: 1000});
     }
+    
+    $('html, body').animate({scrollTop: 0}, 'slow');
   };
   
-  $("#home").click(function(){
-    cleanScreenFunction();
+  var goHome = function(){
+    if(!$("#main").is(":visible")){
+      $(".content").fadeOut(1000);
+      $("#main").fadeIn(1000);
+    }
+  };
+  
+  $(".item, #about_contact").click(function(){
+    $("#main").fadeOut(1000);
+    $("#projects .project").removeClass("active");
+    $("#projects .project").css("display", "none");
+    $("#projects").fadeIn(1000);
+    $("#projects .project").eq($(".item").index(this)).addClass("active").fadeIn(1000);
+    $("#control").fadeIn(1000);
   });
-
-  $("#about_contact").click(function(){
-    cleanScreenFunction();
-    $("#about").fadeIn(1000);
-  });
+  
+  $("#home").click(goHome);
 
   $("#left").click(previousFunction);
   $("#right").click(nextFunction);
@@ -70,7 +68,7 @@ $(document).ready(function(){
   $(document).keydown(function(e) {
     switch(e.which){
       case 27:
-        cleanScreenFunction();
+        goHome();
         break;
       case 37: 
         previousFunction();
@@ -83,7 +81,7 @@ $(document).ready(function(){
     }
   });
 
-  $(".item,#left,#right").click(function(){
+  $(".item,#left,#right,#back a, #about_contact").click(function(){
     $('html, body').animate({scrollTop: 0}, 'slow');
   });
 

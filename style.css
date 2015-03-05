@@ -17,6 +17,15 @@ header{
     background-color: rgba(255,255,255,0.9);
 }
 
+a:hover{
+    color: #e84c8d !important;
+    transition: color 0.5s ease-in-out;
+}
+
+a{
+    transition: color 0.5s ease-in-out;
+}
+
 header #header_container{
     opacity: .8;    
     width: 1085px;
@@ -94,7 +103,7 @@ header #header_container #about_contact{
     filter: grayscale(0%);    
 }
 
-#projects, #about{
+#projects{
     text-align: left;
     display: none;
     width: 100%;
@@ -156,35 +165,78 @@ header #header_container #about_contact{
     right: 20px;
 }
 
-#about.content{
+#about.content, #bitmap.content{
     width: 1085px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#about.content #about-picture{
-    width: 40%;
-    padding: 20px;
+#about{
+    font-weight: 300;
+}
+
+#about #about-left{
+    width: 65%;
     float: left;
 }
 
-#about.content #about-picture img{
-    max-width:100%;
-    max-height:100%;
+#about.content #about-left #about-info{
+    text-align: justify;
 }
 
-#about.content a{
+#about.content #about-left #title p{
+    font-size: 28px;
+    margin: 0 auto 10px auto;
+}
+
+#about.content #about-left #about-picture{
+    background-color: #91e5d0;
+    text-align: left;
+}
+
+#about.content #about-left #about-picture img{
+    float: left;
+}
+
+#about.content #about-left #about-picture div{
+    clear: both;
+}
+
+#about.content #about-left #about-picture p{
+    padding: 50px 25px 0 0;
+    color: white;
+    font-size: 25px;
+}
+
+#about.content #about-left a{
     color: black;
     text-decoration: none;
 }
 
-#about.content #email{
-    text-align: center;
-    clear: both;
-    margin-top: 80px;
+#about.content #about-right{
+    float: left;
+    width: 30%;
+    margin-left: 30px;
+    text-align: left;
 }
 
-#about.content #social{
-    margin-top: 30px;
-    text-align: center;
+#about.content #about-right img{
+    margin: 0;
+}
+
+#about.content #about-right div:first-child{
+    margin-top: 11px;
+}
+
+#about.content #about-right .right-banner img{
+    width: 100%;
+    margin-top: 15px;
+}
+
+#about.content #about-right .right-banner a,
+#about.content #about-right .right-banner p{
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
 }
