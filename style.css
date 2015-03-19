@@ -87,8 +87,8 @@ header #header_container #about_contact{
 
 .item img{
 
-    transition: filter 2s ease-in-out;
-    -webkit-transition:-webkit-filter 2s ease-in-out;  
+    transition: filter 1s ease-in-out;
+    -webkit-transition:-webkit-filter 1s ease-in-out;  
 
     width: 800px;
     -webkit-filter: grayscale(100%); 
@@ -96,8 +96,8 @@ header #header_container #about_contact{
 }
 
 .item:hover > img{
-    transition: filter 2s ease-in-out;
-    -webkit-transition:-webkit-filter 2s ease-in-out;  
+    transition: filter 1s ease-in-out;
+    -webkit-transition:-webkit-filter 1s ease-in-out;  
 
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);    

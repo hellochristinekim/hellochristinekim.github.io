@@ -13,7 +13,7 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
   
-  $("#mygrid").gridacord({width: 350, height: 350, item_desc_pct: 0.9});
+  $("#mygrid").gridacord({width: 350, height: 350, item_desc_pct: 0.9, item_margin: 3});
 
   var previousFunction = function(){
 
