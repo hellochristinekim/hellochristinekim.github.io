@@ -5,7 +5,6 @@ TODO
 - 404 page
 - favicon
 - create a customized linkedin url
-- ANALYTICS
 
 
 TEST: 
@@ -13,6 +12,7 @@ TEST:
 
 
 DONE
+- ANALYTICS
 - use google's jquery
 - javascript position
 - correct linkedin link url
