@@ -42,8 +42,13 @@ header #header_container a{
     font-size: 20px;
 }
 
-header #header_container #about_contact{
+header #header_container #contact-top-right{
+    display: inline;
     float:right;
+}
+
+header #header_container span {
+    margin: 0px 4px;
 }
 
 .content{

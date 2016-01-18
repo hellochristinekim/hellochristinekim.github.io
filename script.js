@@ -51,7 +51,7 @@ $(document).ready(function(){
     }
   };
   
-  $(".item, #about_contact").click(function(){
+  $(".item").click(function(){
     $("#main").fadeOut(1000);
     $("#projects .project").removeClass("active");
     $("#projects .project").css("display", "none");
@@ -81,7 +81,7 @@ $(document).ready(function(){
     }
   });
 
-  $(".item,#left,#right,#back a, #about_contact").click(function(){
+  $(".item,#left,#right,#back a").click(function(){
     $('html, body').animate({scrollTop: 0}, 'slow');
   });
 
